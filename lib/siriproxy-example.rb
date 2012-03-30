@@ -12,8 +12,7 @@ require 'pp'
 ######
 
 #Note about returns from filters:
-# - Return false to stop the object from being forwarded
-# - Return a Hash to substitute or update the object
+# - Return false to stop the object from being forwarded# - Return a Hash to substitute or update the object
 # - Return nil (or anything not a Hash or false) to have the object forwarded (along with any 
 #    modifications made to it)
 
@@ -153,7 +152,7 @@ class SiriProxy::Plugin::Example < SiriProxy::Plugin
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
   end
     
-  listen_for /Was ist Spire Community?/i do
+  listen_for /Was ist WCS-IT Community?/i do
     say "Eine Community die allen usern des Iphone 4 , siri ermeoglichen moechte"
     say "Ich bin zufrieden , sonst koennte ich dir nicht antworten."
 	say "Also rein in Facebook und poste ein Nettes Kommentar."
